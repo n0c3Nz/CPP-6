@@ -6,8 +6,7 @@ int main (int argc, char **argv)
 		std::cout << "Usage: ./scalar [literal]" << std::endl;
 		return 1;
 	}
-	Scalar scalar;
 	std::string literal = argv[1];
-	scalar.converter(literal);
+	Scalar::converter(literal);
 	return 0;
 }

@@ -6,13 +6,13 @@
 #include <iomanip>
 
 class Scalar {
-
-public:
-	Scalar();
-	Scalar(Scalar const &copy);
-	virtual ~Scalar();
-	Scalar		&operator=(Scalar const &copy);
-	void		converter(std::string literal) const;
+	private:
+		Scalar();
+		Scalar(Scalar const &copy);
+		virtual ~Scalar();
+		Scalar		&operator=(Scalar const &copy);
+	public:
+		static void		converter(std::string literal);
 };
 
 #endif

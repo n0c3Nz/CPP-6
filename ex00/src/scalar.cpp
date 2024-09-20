@@ -18,7 +18,7 @@ Scalar::~Scalar() {}
 
 // Member functions
 
-void	Scalar::converter(std::string literal) const {
+void	Scalar::converter(std::string literal) {
 	try {
 		if (std::stoi(literal) < 127 && std::stoi(literal) > 32) {
 			std::cout << "char: '" << static_cast<char>(std::stoi(literal)) << "'"<< std::endl;
