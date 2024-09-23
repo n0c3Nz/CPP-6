@@ -36,11 +36,11 @@ void	Scalar::converter(std::string literal) {
 	try {
 		std::cout << "float: " << std::fixed << std::setprecision(1) << std::stof(literal) << "f" << std::endl;
 	} catch (std::exception &e) {
-		std::cout << "float: impossible" << std::endl;
+		std::cout << "impossible" << std::endl;
 	}
 	try {
 		std::cout << "double: " << std::stod(literal) << std::endl;
 	} catch (std::exception &e) {
-		std::cout << "double: impossible" << std::endl;
+		std::cout << "impossible" << std::endl;
 	}
 }
