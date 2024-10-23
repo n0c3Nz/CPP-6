@@ -5,12 +5,12 @@
 #include <string>
 #include <iomanip>
 
-class Scalar {
+class ScalarConverter {
 	private:
-		Scalar();
-		Scalar(Scalar const &copy);
-		virtual ~Scalar();
-		Scalar		&operator=(Scalar const &copy);
+		ScalarConverter();
+		ScalarConverter(ScalarConverter const &copy);
+		virtual ~ScalarConverter();
+		ScalarConverter		&operator=(ScalarConverter const &copy);
 	public:
 		static void		converter(std::string literal);
 };

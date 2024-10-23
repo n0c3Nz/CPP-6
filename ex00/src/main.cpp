@@ -7,6 +7,6 @@ int main (int argc, char **argv)
 		return 1;
 	}
 	std::string literal = argv[1];
-	Scalar::converter(literal);
+	ScalarConverter::converter(literal);
 	return 0;
 }

@@ -1,24 +1,24 @@
 #include <scalar.hpp>
 
 // Cannonical form
-Scalar::Scalar() {}
+ScalarConverter::ScalarConverter() {}
 
-Scalar::Scalar(Scalar const &copy) {
+ScalarConverter::ScalarConverter(ScalarConverter const &copy) {
 	*this = copy;
 }
 
-Scalar &Scalar::operator=(Scalar const &copy) {
+ScalarConverter &ScalarConverter::operator=(ScalarConverter const &copy) {
 	if (this != &copy) {
 		*this = copy;
 	}
 	return *this;
 }
 
-Scalar::~Scalar() {}
+ScalarConverter::~ScalarConverter() {}
 
 // Member functions
 
-void	Scalar::converter(std::string literal) {
+void	ScalarConverter::converter(std::string literal) {
 	try {
 		if (std::stoi(literal) < 127 && std::stoi(literal) > 32) {
 			std::cout << "char: '" << static_cast<char>(std::stoi(literal)) << "'"<< std::endl;
